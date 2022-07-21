@@ -20,5 +20,5 @@ jobs:
       - run: npm ci
       - run: npm --no-git-tag-version version patch
       - run: npm run build
-      - run: aws s3 sync ./dist/ s3://trx.backofficeclouds.com
+      - run: aws s3 sync ./dist/trx-ui/ s3://trx.backofficeclouds.com
   
